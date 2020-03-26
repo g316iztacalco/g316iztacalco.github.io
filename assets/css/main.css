@@ -3750,6 +3750,12 @@ input, select, textarea {
 		opacity: 1;
 	}
 
+	.logoG316Nav{
+		height:20px; 
+		width: auto;
+		margin-top: 12px;
+	}
+
 /* CTA */
 
 	#cta .inner {
