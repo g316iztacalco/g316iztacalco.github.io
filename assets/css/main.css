@@ -2051,7 +2051,7 @@ input, select, textarea {
 			-ms-transform: rotate(-45deg);
 			transform: rotate(-45deg);
 			border-radius: 3px;
-			border: solid 2px #fff;
+			/*border: solid 2px #fff;*/
 			display: inline-block;
 			font-size: 1.35em;
 			height: calc(3em + 2px);
@@ -2078,7 +2078,7 @@ input, select, textarea {
 			}
 
 		.icon.style1 {
-			color: #00ffcc;
+			color: #804002;
 		}
 
 		.icon.style2 {
@@ -2086,7 +2086,7 @@ input, select, textarea {
 		}
 
 		.icon.style3 {
-			color: #76ddff;
+			color: #800002;
 		}
 
 /* Image */
