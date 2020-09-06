@@ -13,32 +13,14 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-	<!-- Load Facebook SDK for JavaScript -->
-	      <div id="fb-root"></div>
-	      <script>
-	        window.fbAsyncInit = function() {
-	          FB.init({
-	            xfbml            : true,
-	            version          : 'v8.0'
-	          });
-	        };
-
-	        (function(d, s, id) {
-	        var js, fjs = d.getElementsByTagName(s)[0];
-	        if (d.getElementById(id)) return;
-	        js = d.createElement(s); js.id = id;
-	        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
-	        fjs.parentNode.insertBefore(js, fjs);
-	      }(document, 'script', 'facebook-jssdk'));</script>
-
-	      <!-- Your Chat Plugin code -->
-	      <div class="fb-customerchat"
-	        attribution=setup_tool
-	        page_id="115320046774956"
-	  theme_color="#21b2a6"
-	  logged_in_greeting="¡Hola! ¿En qué te podemos ayudar?"
-	  logged_out_greeting="¡Hola! ¿En qué te podemos ayudar?">
-	      </div>
+	    <!-- Your Chat Plugin code -->
+	    <div class="fb-customerchat"
+	    	attribution=setup_tool
+			page_id="115320046774956"
+			theme_color="#21b2a6"
+			logged_in_greeting="¡Hola! ¿En qué te podemos ayudar?"
+			logged_out_greeting="¡Hola! ¿En qué te podemos ayudar?">
+	    </div>
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
@@ -99,7 +81,7 @@
 							<li><a href="mailto:g316iztacalco@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
-							<li>Made with <span style="color: #e25555;">&hearts;</span>
+							<li>Made with <span style="color: #e25555;">&hearts;</span><br><br>
 							<a class="github-button" href="https://github.com/joule7" data-color-scheme="no-preference: dark; light: dark; dark: dark;" aria-label="Follow @joule7 on GitHub">Follow @joule7</a> </li>
 						</ul>
 					</footer>
@@ -126,7 +108,23 @@
 			  gtag('config', 'UA-161891369-1');
 			</script>
 			<!--Facebook -->
+			<div id="fb-root"></div>
 			<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v6.0&appId=995813630813865&autoLogAppEvents=1"></script>
+			<script>
+			window.fbAsyncInit = function() {
+			  FB.init({
+			    xfbml            : true,
+			    version          : 'v8.0'
+			  });
+			};
+
+			(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
 
 	</body>
 </html>
