@@ -48,46 +48,14 @@
 							<h2>En Vivo</h2>
 							<strong>
 							<p>¡No te pierdas nuestra próxima transmisión!</p><br><br>
-							<p>05/04/2020 - 10:00am</p>
+							<p>17/07/2022 - 10:00am</p>
 							</strong>
 							<div id="countdown"></div>
-							<script>
-							var end = new Date('04/05/2021 10:00 AM');
-
-							    var _second = 1000;
-							    var _minute = _second * 60;
-							    var _hour = _minute * 60;
-							    var _day = _hour * 24;
-							    var timer;
-
-							    function showRemaining() {
-							        var now = new Date();
-							        var distance = end - now;
-							        if (distance < 0) {
-
-							            clearInterval(timer);
-							            document.getElementById('countdown').innerHTML = 'Iniciamos!, si no ve el video favor de recargar la página.';
-
-							            return;
-							        }
-							        var days = Math.floor(distance / _day);
-							        var hours = Math.floor((distance % _day) / _hour);
-							        var minutes = Math.floor((distance % _hour) / _minute);
-							        var seconds = Math.floor((distance % _minute) / _second);
-
-							        document.getElementById('countdown').innerHTML = days + ' dias, ';
-							        document.getElementById('countdown').innerHTML += hours + ' horas, ';
-							        document.getElementById('countdown').innerHTML += minutes + ' minutos y ';
-							        document.getElementById('countdown').innerHTML += seconds + ' segundos';
-							    }
-
-							    timer = setInterval(showRemaining, 1000);
-							</script>
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
 								<center>
-									<div class="fb-video" data-href="https://www.facebook.com/g316iztacalco/videos/1153713231734420/" data-width="" data-show-text="false"><blockquote cite="https://developers.facebook.com/g316iztacalco/videos/1153713231734420/" class="fb-xfbml-parse-ignore"><a href="https://developers.facebook.com/g316iztacalco/videos/1153713231734420/">VIDA DISCIPLINADA</a><p>VIDA DISCIPLINADA</p>Publicado por <a href="https://www.facebook.com/g316iztacalco/">G3:16 Iztacalco</a> en Domingo, 21 de marzo de 2021</blockquote></div>
+									<div class="fb-video" data-href="https://www.facebook.com/g316iztacalco/videos/492364836025172/" data-width="" data-show-text="false"><blockquote cite="https://www.facebook.com/g316iztacalco/videos/492364836025172/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/g316iztacalco/videos/492364836025172/">EL AMOR DEL PADRE</a><p>EL AMOR DEL PADRE</p>Publicado por <a href="https://www.facebook.com/g316iztacalco/">G3:16 Iztacalco</a> en Domingo, 10 de julio de 2022</blockquote></div>
 									<br><br>
 									<ul class="actions fit small">
 										<li><a href="preaching.html" class="button primary fit small">Ver predicaciones pasadas</a></li>
@@ -135,7 +103,8 @@
 			</script>
 			<!--Facebook -->
 			<div id="fb-root"></div>
-			<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v10.0&appId=995813630813865&autoLogAppEvents=1" nonce="IZwIHT7P"></script>
-		
+			<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v14.0&appId=995813630813865&autoLogAppEvents=1" nonce="yVysugrR"></script>
+			<!-- countdown -->
+			<script src="assets/js/setcountdown.js"></script>
 	</body>
 </html>

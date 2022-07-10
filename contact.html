@@ -64,15 +64,14 @@
 						</section>
 					</article>
 
-				<!-- Your Chat Plugin code -->
-				<div 
-					class="fb-customerchat"
-					attribution="setup_tool"
-					page_id="115320046774956"
-					theme_color="#21b2a6"
-					logged_in_greeting="¡Hola! ¿En qué te podemos ayudar?"
-					logged_out_greeting="¡Hola! ¿En qué te podemos ayudar?">
-				</div>
+				<!-- Your Plugin de chat code -->
+				<div id="fb-customer-chat" class="fb-customerchat"></div>
+
+				<script>
+				  var chatbox = document.getElementById('fb-customer-chat');
+				  chatbox.setAttribute("page_id", "115320046774956");
+				  chatbox.setAttribute("attribution", "biz_inbox");
+				</script>
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -112,24 +111,23 @@
 			</script>
 			<!--Facebook -->
 			<div id="fb-root"></div>
-			<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v10.0&appId=995813630813865&autoLogAppEvents=1" nonce="IZwIHT7P"></script>
-			<!-- Load Facebook SDK for JavaScript -->
+			<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v14.0&appId=995813630813865&autoLogAppEvents=1" nonce="yVysugrR"></script>
+			<!-- Your SDK code -->
 			<script>
-			  window.fbAsyncInit = function() {
-			    FB.init({
-			      xfbml            : true,
-			      version          : 'v9.0'
-			    });
-			  };
-
-			  (function(d, s, id) {
-			    var js, fjs = d.getElementsByTagName(s)[0];
-			    if (d.getElementById(id)) return;
-			    js = d.createElement(s); js.id = id;
-			    js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
-			    fjs.parentNode.insertBefore(js, fjs);
-			  }(document, 'script', 'facebook-jssdk'));
-			</script>
-
+				window.fbAsyncInit = function() {
+				  FB.init({
+					xfbml            : true,
+					version          : 'v14.0'
+				  });
+				};
+		  
+				(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+			  </script>
 	</body>
 </html>
