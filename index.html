@@ -13,6 +13,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Alert -->
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 	</head>
 	<body class="landing is-preload">
 
@@ -47,6 +49,11 @@
 
 				<!-- Banner -->
 					<section id="banner">
+						<center>
+						<div id="dialog">
+							<span class="image fit"><img src="images/cn.JPG" alt="Te invitamos a nuestro Concierto Navideño 10 diciembre 10am"/></span>
+						</div>
+						</center>
 						<div class="inner">
 							<h2><img src="images/log316.png" style="height: 25px; width: auto;" alt="logoG316">Iztacalco</h2>
 							<p>Porque de tal manera amó Dios al mundo, <br>que ha dado a su Hijo unigénito, para que todo aquel que en él cree, <br>no se pierda, mas tenga vida eterna.<br><a href="https://www.bible.com/es/bible/149/JHN.3.16" target="_blank">Juan 3:16</a>.</p>
@@ -218,5 +225,13 @@
 			<!--Facebook -->
 			<div id="fb-root"></div>
 			<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v18.0&appId=995813630813865" nonce="B8x7aM1W"></script>
+			<!-- Alert -->
+			<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+			<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+			<script>
+			$(function() {
+				$( "#dialog" ).dialog();
+			});
+			</script>
 	</body>
 </html>
